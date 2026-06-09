@@ -5,5 +5,23 @@ header{
     background:darkgreen;
     text-align: center;
     color: aliceblue;
-    : pink;
+   :root {
+  --fundo: #ffffff;
+  --texto: #000000;
+}
+
+body.dark-mode {
+  --fundo: #121212;
+  --texto: #ffffff;
+}
+
+body {
+  background-color: var(--fundo);
+  color: var(--texto);
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+#btn-tema {
+  padding: 10px 20px;
+  cursor: pointer;
 }
